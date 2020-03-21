@@ -29,14 +29,14 @@ router.post('/', (req, res) => {
 });
 
 router.post('/:id/action', (req, res) => {
-	console.log('action insertion:', req.body);
+	console.log('action insertion:', req.params);
 	
-	Action.insert( { description: req.body.description, notes: req.body.notes } )
+	Action.insert( { project_id: req.params.id, description: req.body.description, notes: req.body.notes } )
 	.then(action => {
 		res.status(200).json(action);
 	})
 	.catch(err => {
-		res.status(500).json({ error: "The server doesn't like what your doing!" })
+		res.status(500).json({ error: "Your doing it wrong ya bozo!" })
 	})
 });
 
