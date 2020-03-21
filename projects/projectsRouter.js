@@ -40,7 +40,7 @@ router.post('/:id/action', validateId, (req, res) => {
 	})
 });
 
-router.get('/:id/action', (req, res) => {
+router.get('/:id/action', validateId, (req, res) => {
 	// console.log(req.params)
 
 	Project.getProjectActions(req.params.id)
