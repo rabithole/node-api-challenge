@@ -39,14 +39,20 @@ Commit your code regularly and use descriptive messages. This helps both you (in
 Demonstrate your understanding of this Sprint's concepts by answering the following free-form questions. Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your Team Lead.
 
 - [ ] Mention two parts of Express that you learned about this week.
+	1. We use Express to route users to their desired data.
+	2. Express, in conjuction with Node.js, is a framework that allows us to use Javascript to interact with a database. 
 
 - [ ] Describe Middleware?
+	1. Middleware are functions that perform various process on data objects before data is sent to the user. It can provide authentication, data continuity and other kinds of error handling, depending on the needs of the appiclation. 
 
 - [ ] Describe a Resource?
+	1. Anything that can be used to access, process, manipulate, change or consume data is a resource. 
 
 - [ ] What can the API return to help clients know if a request was successful?
+	1. A status code and or data that was requested.
 
 - [ ] How can we partition our application into sub-applications?
+	1.  We use routers and modules.
 
 ## Minimum Viable Product
 
